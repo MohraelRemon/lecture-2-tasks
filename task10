@@ -1,0 +1,40 @@
+post_likes = [1200, 45, 980, 15, 3400, 220, 0, 87, 5600, 12]
+
+try:
+    total_likes = sum(post_likes)
+
+    if len(post_likes) == 0:
+        raise ValueError("The list is empty.")
+
+    average_likes = total_likes / len(post_likes)
+
+    print("Total likes:", total_likes)
+    print("Average likes:", average_likes)
+
+    # Classify each post
+    for i in range(len(post_likes)):
+        likes = post_likes[i]
+
+        if likes >= 1000:
+            category = "Viral"
+        elif likes >= 100:
+            category = "Popular"
+        else:
+            category = "Normal"
+
+        print("Post", i + 1, ":", likes, "likes -", category)
+
+    # Find highest likes without max()
+    highest = post_likes[0]
+    highest_position = 0
+
+    for i in range(1, len(post_likes)):
+        if post_likes[i] > highest:
+            highest = post_likes[i]
+            highest_position = i
+
+    print("Highest likes:", highest)
+    print("Post position:", highest_position + 1)
+
+except ValueError:
+    print("There are no posts to analyze.")

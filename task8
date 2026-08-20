@@ -1,0 +1,10 @@
+usernames = ["ali_92", "sara_x", "mo_dev", "lina.k"]
+is_online = [True, False, True, True]
+
+active_users = []
+
+for i in range(len(usernames)):
+    if is_online[i]:
+        active_users.append(usernames[i])
+
+print("Active users:", active_users)

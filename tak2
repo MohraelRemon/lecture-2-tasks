@@ -1,0 +1,8 @@
+followers = ["ali_92", "sara_x", "mo_dev", "lina.k"]
+
+username = input("Enter your username: ")
+
+if username in followers:
+    print("This user is a follower.")
+else:
+    print("This user is not a follower.")

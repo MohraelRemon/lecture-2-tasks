@@ -1,0 +1,15 @@
+cart = [15.99, 42.50, 9.75, 60.00]
+
+total = sum(cart)
+
+if total >= 100:
+    print("Total:", total)
+    print("Free shipping!")
+else:
+    shipping = 5.99
+    final_total = total + shipping
+
+    print("Total:", total)
+    print("Shipping fee:", shipping)
+    print("Final total:", final_total)
+    

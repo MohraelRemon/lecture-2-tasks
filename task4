@@ -1,0 +1,9 @@
+likes = [45, 230, 12, 987, 56, 1200, 3]
+
+count = 0
+
+for like in likes:
+    if like > 100:
+        count += 1
+
+print("Number of popular posts:", count)

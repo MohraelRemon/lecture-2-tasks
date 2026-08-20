@@ -1,0 +1,13 @@
+status = input("Enter order status: ")
+
+match status:
+    case "pending":
+        print("Your order is being processed.")
+    case "shipped":
+        print("Your order has been shipped.")
+    case "delivered":
+        print("Your order has been delivered.")
+    case "cancelled":
+        print("Your order has been cancelled.")
+    case _:
+        print("Unknown order status.") 

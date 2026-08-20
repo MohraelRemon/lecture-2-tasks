@@ -1,0 +1,7 @@
+while True:
+    try:
+        quantity = int(input("Enter the quantity: "))
+        print("Quantity:", quantity)
+        break
+    except ValueError:
+        print("Please enter a valid number.")

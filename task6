@@ -1,0 +1,9 @@
+following = ["tech_news", "daily_memes", "cooking101", "travel_diaries"]
+
+username = input("Which account do you want to unfollow? ")
+
+if username in following:
+    following.remove(username)
+    print("Updated following list:", following)
+else:
+    print("This account is not in your following list.")

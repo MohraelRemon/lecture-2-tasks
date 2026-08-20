@@ -1,0 +1,7 @@
+price = 25
+
+units = int(input("How many units do you want to buy? "))
+
+total = units * price
+
+print("Total price:", total, "$")

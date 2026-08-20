@@ -1,0 +1,17 @@
+raw_orders = ["4", "two", "0", "-1", "10", ""]
+
+for order in raw_orders:
+    try:
+        quantity = int(order)
+
+        if quantity <= 0:
+            print("Invalid order:", order)
+            continue
+
+        total = quantity * 20
+
+        print("Quantity:", quantity)
+        print("Total cost:", total)
+
+    except ValueError:
+        print("Invalid order:", order)
